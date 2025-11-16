@@ -1,66 +1,118 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academic Research & Data Analysis Services</title>
+  <title>Academic Research & Data Analysis Group</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f4f4f4;
     }
+
+    /* Header */
     header {
-      overflow: auto;
-      padding: 20px;
-      background-color: #003366;
+      display: flex;
+      align-items: center;
+      background: #003366;
       color: white;
+      padding: 20px;
     }
     header img {
       width: 120px;
-      float: left;
+      border-radius: 8px;
       margin-right: 20px;
-      border-radius: 5px;
     }
+
+    /* Navigation */
     nav {
       background: #002244;
       padding: 15px;
+      display: flex;
+      gap: 20px;
+    }
+    nav a, nav button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
     }
     .dropdown {
       position: relative;
       display: inline-block;
-    }
-    .dropdown button {
-      background: #0055aa;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      border-radius: 5px;
     }
     .dropdown-content {
       display: none;
       position: absolute;
       background: white;
       min-width: 260px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      border-radius: 5px;
-      z-index: 1;
       padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       color: #333;
-      line-height: 1.5;
-      font-size: 15px;
+      line-height: 1.4;
+      z-index: 10;
     }
-    main {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
+
+    /* Hero Section */
+    .hero {
+      background: #0055aa;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .hero button {
       background: white;
+      color: #0055aa;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
     }
+
+    /* Sections */
+    section {
+      background: white;
+      margin: 20px auto;
+      padding: 25px;
+      max-width: 900px;
+      border-radius: 6px;
+    }
+    h2 {
+      color: #003366;
+    }
+
+    /* Services grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .box {
+      background: #eef3f8;
+      padding: 20px;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    /* Footer */
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 30px;
       background: #003366;
       color: white;
       margin-top: 40px;
@@ -71,46 +123,96 @@
 
 <header>
   <img src="logo.jpg" alt="Logo">
-  <div style="padding-top:10px;">
-    <h1 style="margin:0; font-size:32px;">Academic Research & Data Analysis Group</h1>
-    <p style="margin:5px 0 0 0;">Professional Support for Undergraduate & Postgraduate Research</p>
+  <div>
+    <h1>Academic Research & Data Analysis Group</h1>
+    <p>Professional Support for Undergraduate & Postgraduate Research</p>
   </div>
 </header>
 
 <nav>
+  <a href="#home">Home</a>
+
   <div class="dropdown">
     <button>About Us ▾</button>
     <div class="dropdown-content">
-      We are a dedicated team of academic researchers and data analysts committed to providing high-quality support for undergraduate and postgraduate research projects. Our expertise spans data analysis, academic writing, research methodology, and statistical interpretation, ensuring that students and scholars receive comprehensive and reliable guidance throughout their research journey.
+      We are a dedicated team of academic researchers and data analysts committed to providing high-quality support for undergraduate and postgraduate research projects. Our expertise spans data analysis, academic writing, research methodology, and statistical interpretation.
     </div>
   </div>
+
+  <div class="dropdown">
+    <button>Services ▾</button>
+    <div class="dropdown-content">
+      • Data Analysis (SPSS, Excel, Python, R)<br>
+      • Academic Writing Assistance<br>
+      • Research Methodology Guidance<br>
+      • Statistical Interpretation<br>
+      • Project Support & Supervision
+    </div>
+  </div>
+
+  <a href="#contact">Contact</a>
+
+  <a href="https://forms.gle/" target="_blank">Request a Service</a>
 </nav>
 
-<script>
-  document.querySelector(".dropdown button").addEventListener("click", function() {
-    const dropdown = document.querySelector(".dropdown-content");
-    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
-  });
-</script>
+<div class="hero" id="home">
+  <h1>Empowering Academic Excellence</h1>
+  <p>High-quality research support, data analysis, and consultancy for scholars worldwide.</p>
+  <button onclick="location.href='#contact'">Get in Touch</button>
+</div>
 
-<main>
+<section>
+  <h2>Why Choose Us</h2>
+  <div class="grid">
+    <div class="box">🌟 Experienced Research Team</div>
+    <div class="box">📈 Advanced Data Analysis Tools</div>
+    <div class="box">🔍 Accurate Statistical Interpretation</div>
+    <div class="box">🕒 Fast & Reliable Delivery</div>
+    <div class="box">✔️ Plagiarism-Free Reports</div>
+  </div>
+</section>
+
+<section>
   <h2>Our Services</h2>
-  <ul>
-    <li>Data Analysis (SPSS, Excel, Python, R)</li>
-    <li>Research Project Support</li>
-    <li>Research Methodology Guidance</li>
-    <li>Academic Writing Assistance</li>
-    <li>Statistical Interpretation</li>
-  </ul>
+  <div class="grid">
+    <div class="box">📊 Data Analysis (SPSS, Python, Excel)</div>
+    <div class="box">✍️ Academic Writing</div>
+    <div class="box">📚 Research Methodology Support</div>
+    <div class="box">🧮 Statistical Interpretation</div>
+    <div class="box">🎓 Project Work Supervision</div>
+  </div>
+</section>
 
+<section>
+  <h2>Portfolio / Sample Work</h2>
+  <p>• SPSS Outputs<br>• Data Analysis Reports<br>• Research Templates<br>• Academic Project Samples</p>
+</section>
+
+<section>
+  <h2>Testimonials</h2>
+  <p>"Reliable and professional. Their data analysis service helped me complete my MSc project successfully." — ★★★★★</p>
+  <p>"Clear explanations and fast delivery. Highly recommended!" — ★★★★★</p>
+</section>
+
+<section id="contact">
   <h2>Contact Us</h2>
   <p>Email: your-email@example.com</p>
-  <p>Phone: +234 8062715000</p>
-</main>
+  <p>Phone: +234 000 000 0000</p>
+  <p>WhatsApp: +234 000 000 0000</p>
+</section>
 
 <footer>
   © 2025 Academic Research & Data Analysis Group. All Rights Reserved.
 </footer>
+
+<script>
+  document.querySelectorAll('.dropdown button').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const menu = this.nextElementSibling;
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
 
 </body>
 </html>
