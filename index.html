@@ -3,96 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prince Edwin – Academic Research & Data Analysis Services</title>
+  <title>Academic Research & Data Analysis Services</title>
   <style>
-    body { 
-      font-family: Arial, sans-serif; 
-      margin: 0; 
-      padding: 0;
-      background-color: #f2f6fa;
-      color: #222;
-      line-height: 1.6;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
     }
     header {
+      overflow: auto;
+      padding: 20px;
       background-color: #003366;
-      padding: 30px;
       color: white;
-      text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 32px;
+    header img {
+      width: 120px;
+      float: left;
+      margin-right: 20px;
+      border-radius: 5px;
     }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
+    nav {
+      background: #002244;
+      padding: 15px;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown button {
+      background: #0055aa;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
       background: white;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      min-width: 260px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border-radius: 5px;
+      z-index: 1;
+      padding: 15px;
+      color: #333;
+      line-height: 1.5;
+      font-size: 15px;
     }
-    h2 {
-      color: #003366;
-      margin-top: 30px;
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
     }
-    ul { margin-left: 20px; }
-    a { color: #0066cc; text-decoration: none; }
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #003366;
+      background: #003366;
       color: white;
       margin-top: 40px;
     }
   </style>
 </head>
-
 <body>
 
-<header style = "overflow: auto; padding: 20px; background-color:#003366; color:white;">
- <img src="logo.jpg" alt="Logo" style="width:120px; float:left; margin-right:20px; border-radius:5px;">
+<header>
+  <img src="logo.jpg" alt="Logo">
   <div style="padding-top:10px;">
-    <h1 style="margin:0; font-size:32px;">Prince Edwin Research Consult</h1>
-    <p style="margin:5px 0 0 0;">Academic Research • Data Analysis • Projects & Articles</p>
+    <h1 style="margin:0; font-size:32px;">Academic Research & Data Analysis Group</h1>
+    <p style="margin:5px 0 0 0;">Professional Support for Undergraduate & Postgraduate Research</p>
   </div>
 </header>
 
-<div class="container">
+<nav>
+  <div class="dropdown">
+    <button>About Us ▾</button>
+    <div class="dropdown-content">
+      We are a dedicated team of academic researchers and data analysts committed to providing high-quality support for undergraduate and postgraduate research projects. Our expertise spans data analysis, academic writing, research methodology, and statistical interpretation, ensuring that students and scholars receive comprehensive and reliable guidance throughout their research journey.
+    </div>
+  </div>
+</nav>
 
-  <h2>About Us</h2>
-  <p>
-   We are a dedicated team of academic researchers and data analysts committed to providing high-quality 
-  support for undergraduate and postgraduate research projects.
-  Our expertise spans data analysis, academic writing, research methodology, and statistical interpretation,
-  ensuring that students and scholars receive comprehensive and reliable guidance throughout their research journey.
-  </p>
+<script>
+  document.querySelector(".dropdown button").addEventListener("click", function() {
+    const dropdown = document.querySelector(".dropdown-content");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+  });
+</script>
 
-  <h2>Services We Offer</--h2>-
+<main>
+  <h2>Our Services</h2>
   <ul>
-    <li>Research project guidance and supervision</li>
-    <li>Data analysis using SPSS, Excel, and statistical tools</li>
-    <li>Topic selection and proposal development</li>
-    <li>Academic writing (Chapter 1–5)</li>
-    <li>Interpretation of statistical results</li>
-    <li>Research presentations and PowerPoint preparation</li>
+    <li>Data Analysis (SPSS, Excel, Python, R)</li>
+    <li>Research Project Support</li>
+    <li>Research Methodology Guidance</li>
+    <li>Academic Writing Assistance</li>
+    <li>Statistical Interpretation</li>
   </ul>
 
-  <h2>Portfolio & Projects</h2>
-  <p>Check out some of my data analysis work and academic resources:</p>
-  <ul>
-    <li><a href="https://github.com/Prince-Edwin" target="_blank">View my GitHub Projects</a></li>
-  </ul>
-
-  <h2>Contact</h2>
-  <p>
-    📧 Email: <a href="mailto:amanzeedwin@gmail.com">amanzeedwin@gmail.com.com</a><br>
-    📞 Phone/WhatsApp: 08062715000 (optional)
-  </p>
-
-</div>
+  <h2>Contact Us</h2>
+  <p>Email: your-email@example.com</p>
+  <p>Phone: +234 8062715000</p>
+</main>
 
 <footer>
-  © 2025 Prince Edwin — Academic Research & Data Analysis Services
+  © 2025 Academic Research & Data Analysis Group. All Rights Reserved.
 </footer>
 
 </body>
