@@ -1,5 +1,4 @@
 # Prince-Edwin.github.io
-Academic Research, Data Analysis and project Services
 Welcome to my official GitHub Pages repository.
 This website contains my academic research portfolio, data analysis projects, and consultancy services for students and researchers.
 
