@@ -32,4 +32,4 @@ GitHub for project documentation and version control
 📩 Contact
 
 For academic project support or research collaboration, feel free to reach me at:
-📧 amanzeedwin@gmail.com or Whatsapp: 08062715000
+📧 princeedwinresearchconsult@gmail.com or Whatsapp: 08062715000
